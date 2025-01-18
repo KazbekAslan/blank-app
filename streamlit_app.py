@@ -134,6 +134,7 @@ st.header("Data of Matches")
 st.dataframe(data, height=150)
 st.header(f"{chose_team} Elo point")
 Elo = show_Elo_data[['Date','Elo']].reset_index(drop=True)
+#matplot
 fig, ax = plt.subplots(facecolor='black')
 fig.set_size_inches((8,3))
 ax.plot(Elo['Date'], Elo['Elo'])
